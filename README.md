@@ -1,19 +1,18 @@
 # Airline Sentiment
 
-<table>
-<tr>
-<td>
-  A sentiment analysis about the problems of each major U.S. airline.
-  <br /><br />
-  Context: Twitter data was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service").
-</td>
-</tr>
-</table>
+A sentiment analysis about the problems of each major U.S. airline.
 
-## Methodology and Insights
+## Context 
+
+Twitter [data](https://www.kaggle.com/crowdflower/twitter-airline-sentiment) was scraped from February of 2015 and contributors were asked to first classify positive, negative, and neutral tweets, followed by categorizing negative reasons (such as "late flight" or "rude service").
+
+## Methodology
 
 - Several pre-processing steps were applied to make the tweet text ready for learning, notably the removal of stop words and pruning of multiple inflections. 
 - Two variants of vectorizer algorithms, Count Vectorizer and Term Frequency – Inverse Document Frequency, were employed as measures of term frequency and word originality, respectively. 
+
+## Insights and Peformance
+
 - The use of TD-IDF vectorization and logistic regression achieved the best testing accuracy. 
 - The most common terms uncovered using TD-IDF include phone, pilot, plan--with possible sub-plans mentioned (platinum, plus, premier, premium), policy, order, relations, and representative. 
 - More closely examining existing phone, pilot, and airline representative practices, as well as flyer plans, may reap further insights into each airline's customer experience.
